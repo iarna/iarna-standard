@@ -44,9 +44,10 @@ It enables all of the eslint recommended rules.
 
 It enables some assertions that standard doesn't:
 
-* `no-prototype-builtins`
-* `array-callback-return`
-* `no-implicit-coercion`
+* `no-prototype-builtins` - Disallow calling Object.prototype methods directly
+* `array-callback-return` - Enforce using return in builtin callbacks when needed
+* `no-implicit-coercion` - Disallow implicit conversions, eg `!!foo` use `Boolean(foo)` instead.
+* The [`node`](https://www.npmjs.com/package/eslint-plugin-node) recommended assertions.
 
 It adds some more plugins:
 
@@ -78,8 +79,6 @@ It adds some more plugins:
     same as above, but for string escapes, eg `'\uD834'`
   * `no-array-instanceof` -
     use `Array.isArray` for array identity
-  * `no-new-buffer` -
-    modern node is pissy about `new Buffer`
   * `no-hex-escape` -
     no `'\x1b'` use `'\u001b'` instead
   * `custom-error-definition` -

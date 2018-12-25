@@ -15,6 +15,7 @@ config.plugins = [
 
 config.extends = [
   'plugin:security/recommended',
+  'plugin:node/recommended',
   'eslint:recommended'
 ]
 
