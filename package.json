@@ -1,0 +1,44 @@
+{
+  "name": "@iarna/standard",
+  "version": "1.0.0",
+  "bin": "standard.js",
+  "main": "standard.js",
+  "dependencies": {
+    "eslint": "^5.11.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-dependencies": "^2.4.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-unicorn": "^6.0.1",
+    "standard-engine": "^10.0.0"
+  },
+  "author": {
+    "name": "Rebecca Turner",
+    "email": "me@re-becca.org",
+    "twitter": "ReBeccaOrg"
+  },
+  "license": "ISC",
+  "scripts": {
+    "prerelease": "npm t",
+    "release": "standard-version -s",
+    "postrelease": "npm publish && git push --follow-tags",
+    "pretest": "standard",
+    "test": "tap -J -100 test/*.js",
+    "update-coc": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'",
+    "update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
+  },
+  "devDependencies": {
+    "standard-version": "*",
+    "tap": "*",
+    "weallbehave": "*",
+    "weallcontribute": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iarna/iarna-standard.git"
+  },
+  "bugs": "https://github.com/iarna/iarna-standard/issues",
+  "homepage": "https://npmjs.com/package/@iarna/standard"
+}
