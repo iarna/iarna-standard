@@ -14,7 +14,8 @@ config.plugins = [
 ]
 
 config.extends = [
-  'plugin:security/recommended'
+  'plugin:security/recommended',
+  'eslint:recommended'
 ]
 
 Object.assign(config.rules, {

@@ -40,6 +40,8 @@ It disables some standard rules that produce results I find objectionable:
   `_ => { abc = _ }` but I don't wanna. And assigning in return otherwise may be weird, but it isn't likely to hide a bug.
 * `object-curly-spacing` - Enabled in `standard@12` it sets all my code on fire.
 
+It enables all of the eslint recommended rules.
+
 It enables some assertions that standard doesn't:
 
 * `no-prototype-builtins`
