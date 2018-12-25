@@ -1,7 +1,9 @@
 {
   "name": "@iarna/standard",
   "version": "1.0.0",
-  "bin": "standard.js",
+  "bin": {
+    "iarna-standard": "standard.js"
+  },
   "main": "standard.js",
   "dependencies": {
     "eslint": "^5.11.0",
