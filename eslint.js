@@ -56,7 +56,10 @@ Object.assign(config.rules, {
   'import/first': null,
   'import/no-duplicates': null,
   'import/no-named-default': null,
-  'import/no-webpack-loader-syntax': null
+  'import/no-webpack-loader-syntax': null,
+
+  // disable some things pulled in through the recommended bundles
+  'no-console': 0
 })
 
 module.exports = config
