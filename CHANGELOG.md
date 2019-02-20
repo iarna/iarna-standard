@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/iarna/iarna-standard/compare/v2.0.0...v2.0.1) (2019-02-20)
+
+
+### Bug Fixes
+
+* **rules:** Disable no-console rule ([28a9c79](https://github.com/iarna/iarna-standard/commit/28a9c79))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/iarna/iarna-standard/compare/v1.0.1...v2.0.0) (2018-12-25)
 
