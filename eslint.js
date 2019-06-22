@@ -26,6 +26,9 @@ Object.assign(config.rules, {
   'no-return-assign': 0,
   'object-curly-spacing': 0,
 
+  // disable buggy assertions
+  'node/no-unpublished-require': 0,
+
   // enable some things standard doesn't
   'no-prototype-builtins': 'error',
   'array-callback-return': 'error',
